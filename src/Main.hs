@@ -7,7 +7,7 @@ import XMonad.Util.EZConfig(additionalKeys)
 import System.IO
 
 main = do
-  xmobarProcess <- spawnPipe "support/xmobar"
+  xmobarProcess <- spawnPipe "start-xmobar"
   trayerProcess <- spawnPipe "trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 10 --transparent true --tine 0x191970 --height 12"
   xmonad $ defaultConfig {
              manageHook = manageDocks <+> manageHook defaultConfig
