@@ -1,0 +1,4 @@
+#!/bin/bash
+export PATH=$HOME/.xmonad/bin:$PATH
+# xmonad will bootstrap and start monadix
+stack exec xmonad

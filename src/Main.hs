@@ -8,7 +8,7 @@ import System.IO
 
 main = do
   xmobarProcess <- spawnPipe "start-xmobar"
-  trayerProcess <- spawnPipe "trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 10 --transparent true --tine 0x191970 --height 12"
+  trayerProcess <- spawnPipe "start-trayer"
   xmonad $ defaultConfig {
              manageHook = manageDocks <+> manageHook defaultConfig
            , layoutHook = avoidStruts $ smartBorders $ layoutHook defaultConfig
