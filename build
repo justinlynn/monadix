@@ -1,0 +1,6 @@
+#!/bin/bash
+
+XMonadDir="$(pwd)"
+XMonadBinary=$1
+
+stack --local-bin-path bin install xmobar monadix && ln -sf bin/monadix "${XMonadBinary}"

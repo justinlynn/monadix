@@ -1,0 +1,29 @@
+resolver: lts-7.14
+
+flags:
+  xmonad-contrib:
+    use_xft: true
+
+extra-package-dbs: []
+
+extra-deps:
+  - X11-1.7
+  - X11-xft-0.3.1
+
+packages:
+  - .
+
+  - location:
+      git: https://github.com/jaor/xmobar
+      commit: 9caa2668a0f32af600f0d5183058477b00ff977f # master head as of 3/1/2016
+    extra-dep: true
+
+  - location:
+      git: https://github.com/justinlynn/xmonad
+      commit: 220ef65ffbdb9542908be3bbc8302b1874867498 # develop head as of 3/1/2016
+    extra-dep: true
+
+  - location:
+      git: https://github.com/justinlynn/xmonad-contrib
+      commit: ac75654bdd820c400d39330a64c8503ee5519ae7 # develop head as of 3/1/2016
+    extra-dep: true
