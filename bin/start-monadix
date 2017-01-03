@@ -1,4 +1,6 @@
 #!/bin/bash
 export PATH=$HOME/.xmonad/bin:$PATH
+# set background a nice, solid black
+xsetroot -solid black
 # xmonad will bootstrap and start monadix
 stack exec xmonad
